@@ -15,6 +15,21 @@ from datetime import datetime
 # ==============================================================================
 # 1. CẤU HÌNH TRANG STREAMLIT
 # ==============================================================================
+st.markdown("""
+    <style>
+    /* Tùy chỉnh bo góc và màu sắc cho các nút bấm chuyển tab */
+    .stButton>button {
+        border-radius: 20px;
+        border: 1px solid #262730;
+        font-weight: 500;
+        transition: all 0.3s ease;
+    }
+    .stButton>button:hover {
+        border-color: #4F46E5;
+        color: #4F46E5;
+    }
+    </style>
+""", unsafe_allow_html=True)
 st.set_page_config(
     page_title="CarbonLens - Tín chỉ Carbon Rừng Cần Giờ",
     page_icon="🌿",
